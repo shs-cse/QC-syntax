@@ -34,6 +34,7 @@ area(w$: Int32, h$: Int32) = w*h # this means there can be multiple (w,h) as inp
 area(2, [2,3]) # returns [4,6]
 area([2,3], 2) # returns [4,6]
 area([2,3], [4,5]) # returns [8,15]
+area([1,2,3], [4,5]) # error
 ```
 
 ### Tuple
