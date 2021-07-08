@@ -43,10 +43,11 @@ area([2,3], [4,5]) # returns [8,15]
 ### List
 * **Indexing**: 1D lists are indexed like `nums[0]` and n-D lists are indexed like `nums[0][0]` etc.
 * **Logical Indexing (Mask)**: For example, `nums[x: x > 0]` and `nums[list_with_same_size_as_nums > 0]` should be able to return only positive numbers.
-* **Exclusive Range and Slicing should be done with `..`**: 
+* **Exclusive Range `..`**: `[0..3]` is equivalent to `[0,1,2]`. 
+* **List Slicing**: Range can be used for slicing: `nums2d[0..3][1..2]`. Also `,` can be used to skip through elements: `nums[1,3] # returns [nums[1], nums[3]]`. Both of these can be used together: `nums[0..2,3] # returns [nums[0], nums[1], nums[3]]
 
 ### Dictionary
-* **Keys don't need quotatoins. Can be refrenced with `"..."`**: Here's what I mean
+* **Keys don't need quotatoins. Can be refrenced with `"..."`**: Here's what I mean,
 ```
 student = {name: "Shadman", id: 123}
 student["name"] = "Shahriar"
