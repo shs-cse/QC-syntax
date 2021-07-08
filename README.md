@@ -8,7 +8,7 @@ New Quantum Computing Language Syntax Proposal
 
 ### Variables
 * **Names can have @, !, ? (except at front)**: example: `_abCAde?!`
-* **All caps for constants**: PI = 3.14159
+* **All caps for constants**: `PI = 3.14159`
 * **Assingnment multiple**: `a,b = 1,2`
 * **Variables can have specific types**: `s : String = "Hello World"`. This also applies to functions, `def f(x: Int32) : Bool ...`
 * **There can be multiple datatypes**: `s : Float32|Int32|Student = 21`. We should also be able to create alias like, `Number = Float32 or Int32` and `s : Number = 21`
@@ -58,6 +58,8 @@ student[qurey]
 
 ### Generator
 
+### Data-Types
+* **String**: format string with `#{}`. For example, `"#{PI}` should return "3.14159"
 
 ### Printing
 * **`puts()` vs `print()`**: `puts()` will inherently have "\n"
